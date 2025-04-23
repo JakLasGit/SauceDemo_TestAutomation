@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33814a17-dccb-4fb0-8c4c-df03467c6378" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SauceDemo_TestAutomation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/cart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/checkout.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/products.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjects/loginPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjects/productsPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
+    <list default="true" id="33814a17-dccb-4fb0-8c4c-df03467c6378" name="Changes" comment="Pierwszy commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,9 +161,22 @@
       <option name="presentableId" value="Default" />
       <updated>1744706761679</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pierwszy commit">
+      <option name="closed" value="true" />
+      <created>1745411620877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745411620877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pierwszy commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pierwszy commit" />
   </component>
 </project>
