@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33814a17-dccb-4fb0-8c4c-df03467c6378" name="Changes" comment="Pierwszy commit">
+      <change afterPath="$PROJECT_DIR$/tests/test_products.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/products.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/loginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/loginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/productsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/productsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JakLasGit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JakLasGit/SauceDemo_TestAutomation&quot;,
+    &quot;accountId&quot;: &quot;baa28e83-919e-47fd-8a4a-9cf3fbbe321e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -38,13 +56,14 @@
     "Python tests.Python tests for tests.test_exampletest.test_example_login_test.executor": "Run",
     "Python tests.Python tests in test_exampletest.py.executor": "Run",
     "Python tests.Python tests in test_login.py.executor": "Run",
+    "Python tests.Python tests in test_products.py.executor": "Run",
     "Python.loginPage.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -52,7 +71,7 @@
       <recent name="C:\Users\jlasz\PycharmProjects\SauceDemo_TestAutomation\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_login.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_products.py">
     <configuration name="loginPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo_TestAutomation" />
       <option name="ENV_FILES" value="" />
@@ -135,13 +154,28 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_products.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_TestAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_products.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_products.py" />
         <item itemvalue="Python tests.Python tests in test_login.py" />
         <item itemvalue="Python tests.Python tests for tests.test_login.test_example_login_test" />
         <item itemvalue="Python tests.Python tests for tests.test_login.test_example_login_test" />
         <item itemvalue="Python tests.Python tests for tests.test_login.test_example_login_test" />
-        <item itemvalue="Python.loginPage" />
       </list>
     </recent_temporary>
   </component>
