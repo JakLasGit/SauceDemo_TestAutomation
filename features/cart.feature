@@ -11,7 +11,7 @@ Feature: Shopping Cart Functionality
     When User clicks the 'Continue Shopping' button
     Then User should be redirected back to the products page
 
-  @cart @smoke
+  @cart  @smoke
   Scenario: Remove a product from the cart page
     When User clicks the 'Remove' button next to product
     Then The cart icon counter should be hidden

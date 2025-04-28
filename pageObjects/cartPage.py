@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from pageObjects.checkoutPage import CheckoutPage
+from pageObjects.checkoutInformationPage import CheckoutInformationPage
 
 class CartPage:
     def __init__(self, page):
@@ -20,5 +20,5 @@ class CartPage:
 
     def navigate_to_checkout(self):
         self.checkout_button.click()
-        checkoutPage = CheckoutPage(self.page)
-        return checkoutPage
+        checkoutInformationPage = CheckoutInformationPage(self.page)
+        return checkoutInformationPage
