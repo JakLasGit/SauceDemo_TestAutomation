@@ -17,4 +17,3 @@ Feature: User Login Functionality
     Given User is on the login page
     When User enters the locked out user credentials
     Then User should see a login error message
-  # Add other login-specific scenarios here if needed (e.g., empty fields, locked out user)
