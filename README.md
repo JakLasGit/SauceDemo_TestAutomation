@@ -43,7 +43,7 @@ Follow these steps to set up the project and run the tests locally:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/JakLasGit/SauceDemo_TestAutomation
-cd your-repo-name
+cd SauceDemo_TestAutomation
 ```
 ### 2. Create a Virtual Environment and activate it
 ```bash
