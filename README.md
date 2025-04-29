@@ -23,13 +23,42 @@ The tests are organized into the following Gherkin feature files:
 
 ## Tech Stack & Prerequisites
 
-* **Language:** Python (3.8+ recommended)
-* **Test Runner:** `pytest`
-* **BDD Framework:** `pytest-bdd`
-* **Browser Automation:** `playwright` (with `pytest-playwright`)
-* **Reporting:** `pytest-html`
-* **Configuration:** `python-dotenv`
-* **Package Manager:** `pip`
-* **Version Control:** `git`
+- **Language:** Python (3.8+ recommended)
+- **Test Runner:** `pytest`
+- **BDD Framework:** `pytest-bdd`
+- **Browser Automation:** `playwright` (with `pytest-playwright`)
+- **Reporting:** `pytest-html`
+- **Configuration:** `python-dotenv`
+- **Package Manager:** `pip`
+- **Version Control:** `git`
 
-**Important:** Playwright manages its own browser binaries. You will need to install them after setting up the Python environment.
+> **Note:** Playwright manages its own browser binaries. You will need to install them after setting up the Python environment.
+
+---
+
+## Getting Started
+
+Follow these steps to set up the project and run the tests locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/JakLasGit/SauceDemo_TestAutomation
+cd your-repo-name
+```
+### 2. Create a Virtual Environment and activate it
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+### 3. Install Project Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Install Playwright Browsers
+```bash
+playwright install
+```
+### 5. Run the Tests and generate html report
+```bash
+pytest --html=report.html
+```
