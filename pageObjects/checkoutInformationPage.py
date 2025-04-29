@@ -1,5 +1,7 @@
 from playwright.sync_api import expect
 
+from pageObjects.checkoutReviewPage import CheckoutReviewPage
+
 
 class CheckoutInformationPage:
     def __init__(self, page):
@@ -39,3 +41,7 @@ class CheckoutInformationPage:
     def check_error_message(self, missing_field: str):
         expected_error_text = f"Error: {missing_field} is required"
         expect(self.error_message_container).to_have_text(expected_error_text)
+
+    def navigate_to_checkout_review_page(self):
+        self.continue_button.click()
+        return CheckoutReviewPage(self.page)

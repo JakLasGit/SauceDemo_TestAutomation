@@ -20,5 +20,4 @@ class CartPage:
 
     def navigate_to_checkout(self):
         self.checkout_button.click()
-        checkoutInformationPage = CheckoutInformationPage(self.page)
-        return checkoutInformationPage
+        return CheckoutInformationPage(self.page)

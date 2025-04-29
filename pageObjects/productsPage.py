@@ -35,5 +35,4 @@ class ProductsPage:
 
     def navigate_to_cart_page(self):
         self.shopping_cart_button.click()
-        cartPage = CartPage(self.page)
-        return cartPage
+        return CartPage(self.page)

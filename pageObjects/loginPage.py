@@ -27,8 +27,8 @@ class LoginPage:
         self.username_text_box.fill(username)
         self.password_test_box.fill(password)
         self.login_button.click()
-        productsPage = ProductsPage(self.page)
-        return productsPage
+        return ProductsPage(self.page)
+
 
     def invalid_login(self):
         self.username_text_box.fill(username)

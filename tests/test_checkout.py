@@ -16,10 +16,17 @@ def user_adds_first_item_to_cart_and_proceeds_to_cart_page(test_context:TestCont
     test_context.products_page.adding_first_item_to_cart()
     test_context.cart_page = test_context.products_page.navigate_to_cart_page()
 
-
 @given("User pressed Checkout on a Cart page")
 def user_goes_to_checkout_page(test_context:TestContext):
     test_context.checkout_information_page = test_context.cart_page.navigate_to_checkout()
+
+@given("User has successfully navigated from checkout information to the checkout review page")
+def user_goes_through_whole_process(test_context:TestContext):
+    test_context.checkout_information_page.enter_first_name("Jak")
+    test_context.checkout_information_page.enter_last_name("Las")
+    test_context.checkout_information_page.enter_postal_code("12345")
+    test_context.checkout_review_page = test_context.checkout_information_page.navigate_to_checkout_review_page()
+    test_context.checkout_review_page.validate_navigation()
 
 @when(parsers.parse("User provides First Name: {First_Name}"))
 def enter_first_name(test_context:TestContext, First_Name: str):
@@ -36,9 +43,29 @@ def enter_postal_code(test_context: TestContext, Postal_Code: str):
     postal_code_value = "" if Postal_Code == "NULL" else Postal_Code
     test_context.checkout_information_page.enter_postal_code(postal_code_value)
 
-@when(parsers.parse("User clicks the 'Continue' button"))
+@when("User enters the First Name")
+def user_enter_first_name(test_context: TestContext):
+    test_context.checkout_information_page.enter_first_name("Jak")
+
+@when("User enters the Last Name")
+def user_enter_last_name(test_context: TestContext):
+    test_context.checkout_information_page.enter_last_name("Las")
+
+@when("User enters the Postal Code")
+def user_enter_postal_code(test_context: TestContext):
+    test_context.checkout_information_page.enter_postal_code("12345")
+
+@when(parsers.parse("User clicks the 'Continue' button but stays on the same page"))
 def click_continue_button(test_context: TestContext):
     test_context.checkout_information_page.click_continue_negative()
+
+@when("User clicks the 'Continue' button")
+def click_continue_and_proceed(test_context: TestContext):
+    test_context.checkout_review_page = test_context.checkout_information_page.navigate_to_checkout_review_page()
+
+@when("User clicks the 'Finish' button")
+def click_finish_button(test_context: TestContext):
+    test_context.checkout_confirmation_page = test_context.checkout_review_page.click_finish_button()
 
 @then(parsers.parse("User should see an error message requiring {Missing_Field}"))
 def check_error_message(test_context: TestContext, Missing_Field: str):
@@ -47,3 +74,16 @@ def check_error_message(test_context: TestContext, Missing_Field: str):
 @then("User should remain on the checkout information page")
 def check_still_on_checkout_info_page(test_context: TestContext):
     test_context.checkout_information_page.validate_checkout_page_landing()
+
+@then("User should be redirected to the checkout summary page")
+def navigate_to_checkout_review_page(test_context: TestContext):
+    test_context.checkout_review_page.validate_navigation()
+
+@then("User should be redirected to the order confirmation ('Thank you') page with success message")
+def validate_navigation_to_thank_you_page(test_context: TestContext):
+    test_context.checkout_confirmation_page.validate_navigation()
+
+@then("User goes back to Home Page by pressing the 'Back Home' button")
+def navigate_to_home(test_context: TestContext):
+    test_context.checkout_confirmation_page.navigate_to_home_page()
+    test_context.products_page.login_assertion()
